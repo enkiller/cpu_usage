@@ -4,6 +4,7 @@
  * Change Logs:
  * Date           Author       Notes
  * 2020-12-04     tyx          first implementation
+ * 2021-01-17     Meco Man     beautify cmd
  */
 #include <stdlib.h>
 #include "cpu_usage.h"
@@ -50,4 +51,4 @@ void cpu_usage_msh(int argc, char *argv[])
         rt_kprintf("%s\n", argv[0]);
     }
 }
-FINSH_FUNCTION_EXPORT_ALIAS(cpu_usage_msh, __cmd_usage, cpu usage);
+MSH_CMD_EXPORT_ALIAS(cpu_usage_msh, usage, cpu usage);
